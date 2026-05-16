@@ -64,6 +64,7 @@ public partial class App
         if (createdNew)
         {
             base.OnStartup(e);
+            Privileges.TryEnableSeDebugPrivilege();
             SetupExceptionHandling();
             
             // Initialize the theme

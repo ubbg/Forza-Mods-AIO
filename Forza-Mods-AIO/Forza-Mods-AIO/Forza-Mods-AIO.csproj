@@ -17,11 +17,11 @@
         <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
         <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
         <DebugType>portable</DebugType>
-        <AssemblyName>yeahgosuckmydickwiththisblacklistshit</AssemblyName>
+        <AssemblyName>HorizonAIO</AssemblyName>
         <PlatformTarget>x64</PlatformTarget>
         <ApplicationManifest>app.manifest</ApplicationManifest>
-        <Company>yeahgosuckmydickwiththisblacklistshit</Company>
-        <Product>yeahgosuckmydickwiththisblacklistshit</Product>
+        <Company>Horizon Mods</Company>
+        <Product>Horizon AIO</Product>
         <NeutralLanguage>en-US</NeutralLanguage>
     </PropertyGroup>
 

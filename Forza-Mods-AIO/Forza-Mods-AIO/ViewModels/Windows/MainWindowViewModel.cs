@@ -29,7 +29,7 @@ public partial class MainWindowViewModel : ObservableObject
     
     #region Constants
 
-    private const string NotAttachedText = "Launch FH4 or FH5";
+    private const string NotAttachedText = "Launch FH4, FH5 or FH6";
     private const double WindowCornerRadiusSize = 7.5;
 
     #endregion
@@ -215,7 +215,7 @@ public partial class MainWindowViewModel : ObservableObject
     
     private void SetupAttach()
     {
-        string[] processNames = ["forzahorizon5.exe", "forzahorizon4.exe"];
+        string[] processNames = ["forzahorizon5.exe", "forzahorizon4.exe", "forzahorizon6.exe"];
         if (LoopProcesses(processNames))
         {
             SetupExit();
@@ -250,13 +250,24 @@ public partial class MainWindowViewModel : ObservableObject
     private bool LoopProcesses(IEnumerable<string> processNames)
     {
         Attached = false;
-        
-        foreach (var processName in processNames)
+
+        var processArray = processNames as string[] ?? processNames.ToArray();
+        foreach (var processName in processArray)
         {
             if (GetInstance().OpenProcess(processName) != Mem.OpenProcessResults.Success) continue;
             GvpMaker(processName);
             Attached = true;
             break;
+        }
+
+        if (!Attached)
+        {
+            var runningButInaccessible = processArray.FirstOrDefault(p =>
+                Process.GetProcessesByName(p.Replace(".exe", "", StringComparison.OrdinalIgnoreCase)).Length > 0);
+            if (runningButInaccessible != null)
+            {
+                AttachedText = $"Found {runningButInaccessible} — run AIO as Administrator";
+            }
         }
 
         return Attached;
@@ -326,6 +337,7 @@ public partial class MainWindowViewModel : ObservableObject
         {
             "Forza Horizon 4" => GameVerPlat.GameType.Fh4,
             "Forza Horizon 5" => GameVerPlat.GameType.Fh5,
+            "Forza Horizon 6" => GameVerPlat.GameType.Fh5,
             _ => GameVerPlat.GameType.None
         };
     }
@@ -336,6 +348,7 @@ public partial class MainWindowViewModel : ObservableObject
         {
             "forzahorizon4.exe" => "Forza Horizon 4",
             "forzahorizon5.exe" => "Forza Horizon 5",
+            "forzahorizon6.exe" => "Forza Horizon 6",
             _ => string.Empty
         };
     }

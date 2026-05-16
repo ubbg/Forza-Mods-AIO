@@ -152,10 +152,10 @@
                                                       LanguageCode="French"
                                                       IsEnabled="True"/>
                 
-                    <controls:TranslationComboboxItem Content="{DynamicResource German}" 
+                    <controls:TranslationComboboxItem Content="{DynamicResource German}"
                                                       Translators="lesstoupan, d4vss, OREOONTOP, reviloje.dfvc"
                                                       LanguageCode="German"
-                                                      IsEnabled="False"/>
+                                                      IsEnabled="True"/>
                 
                     <controls:TranslationComboboxItem Content="{DynamicResource Greek}" 
                                                       Translators="GodsonGamerGr"

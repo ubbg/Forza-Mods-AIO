@@ -1,0 +1,331 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=System.Runtime">
+
+    <!-- Common, widely used -->
+    <system:String x:Key="Scan">Scannen</system:String>
+    <system:String x:Key="Mode">Modus</system:String>
+    <system:String x:Key="Value">Wert</system:String>
+    <system:String x:Key="Strength">Stärke</system:String>
+    <system:String x:Key="Limit">Begrenzung</system:String>
+    <system:String x:Key="X">X</system:String>
+    <system:String x:Key="Y">Y</system:String>
+    <system:String x:Key="Z">Z</system:String>
+    <system:String x:Key="On">Ein</system:String>
+    <system:String x:Key="OnWithBrackets">(Ein)</system:String>
+    <system:String x:Key="Off">Aus</system:String>
+    <system:String x:Key="OffWithBrackets">(Aus)</system:String>
+    <system:String x:Key="NoClip">No Clip</system:String>
+    <system:String x:Key="Pull">Ziehen</system:String>
+    <system:String x:Key="Scanning">Scanne...</system:String>
+    <system:String x:Key="Min">Min</system:String>
+    <system:String x:Key="Max">Max</system:String>
+    <system:String x:Key="TranslatedBy">Übersetzt von: </system:String>
+
+    <!-- MainWindow.xaml - Main controls -->
+    <system:String x:Key="AioInfo">Aio Info</system:String>
+    <system:String x:Key="Autoshow">Autosalon/Garage</system:String>
+    <system:String x:Key="SelfVehicle">Spieler/Fahrzeug</system:String>
+    <system:String x:Key="Tuning">Tuning</system:String>
+    <system:String x:Key="About">Über</system:String>
+    <system:String x:Key="Settings">Einstellungen</system:String>
+
+    <!-- MainWindow.xaml - Search feature -->
+    <system:String x:Key="SearchWatermark">Suchen...</system:String>
+
+    <!-- MainWindow.xaml - Hotkeys -->
+    <system:String x:Key="HotkeyWatermark">Tastenkürzel festlegen...</system:String>
+
+    <!-- DebugWindow.xaml -->
+    <system:String x:Key="HookFeaturesDebugList">Hook/Features Debug-Liste</system:String>
+    <system:String x:Key="BreakpointList">Breakpoint-Liste</system:String>
+    <system:String x:Key="BreakpointActions">Breakpoint-Aktionen</system:String>
+    <system:String x:Key="BreakpointUnpause">Fortsetzen</system:String>
+    <system:String x:Key="ReportedInfo">Gemeldete Infos</system:String>
+    <system:String x:Key="AntiAntiCheat">Anti-Anti-Cheat</system:String>
+    <system:String x:Key="DisableCrt">Create-Remote-Thread-Checks deaktivieren</system:String>
+    <system:String x:Key="DisableCrc">CRC-Checks deaktivieren</system:String>
+    <system:String x:Key="DisableEncryption">Werteverschlüsselung deaktivieren</system:String>
+
+    <!-- AioInfo.xaml - Main controls -->
+    <system:String x:Key="FreeAndOpenSource">Dieses Tool ist kostenlos und Open Source. Wenn du dafür bezahlt hast, wurdest du betrogen</system:String>
+    <system:String x:Key="OnlyOfficialDownload">Der einzige offizielle Download ist das GitHub-Repository (zu finden auf der Über-Seite oder auf der rechten Seite)</system:String>
+    <system:String x:Key="JoinTheDiscord">Tritt dem Discord hier bei:</system:String>
+    <system:String x:Key="DiscordHyperlink">https://discord.gg/ForzaMods</system:String>
+    <system:String x:Key="MainDeveloper">Der Hauptentwickler dieser Software ist @merikaaaaa (859106884358635530) auf Discord</system:String>
+    <system:String x:Key="AnyoneElseWhoClaims">Wer behauptet, jemand anderes habe es erstellt, lügt</system:String>
+    <system:String x:Key="Donations">Spenden</system:String>
+    <system:String x:Key="UsefulLinks">Nützliche Links</system:String>
+    <system:String x:Key="ForzaModsDiscord">Forza Mods Discord</system:String>
+    <system:String x:Key="GitRepository">GitHub-Repository</system:String>
+    <system:String x:Key="Overlay">Overlay</system:String>
+    <system:String x:Key="DebugWindow">Debug-Fenster</system:String>
+
+    <!-- Autoshow.xaml -->
+    <system:String x:Key="Run">Ausführen</system:String>
+
+    <system:String x:Key="RemoveAll">Alle</system:String>
+    <system:String x:Key="RemoveDupes">Duplikate</system:String>
+    <system:String x:Key="RemoveNonFavorites">Nicht-Favoriten</system:String>
+    <system:String x:Key="RemoveUnTuned">Nur ungetunte</system:String>
+    <system:String x:Key="RemoveNonLivery">Ohne Lackierung</system:String>
+
+    <system:String x:Key="AutoshowFilters">Autosalon-Filter</system:String>
+    <system:String x:Key="AutoshowFiltersAllCars">Alle Autos anzeigen</system:String>
+    <system:String x:Key="AutoshowFiltersRareCars">Nur seltene Autos anzeigen</system:String>
+    <system:String x:Key="AutoshowFiltersFreeCars">Autos kostenlos machen</system:String>
+
+    <system:String x:Key="GarageModifications">Garagen-Modifikationen</system:String>
+    <system:String x:Key="GarageModificationsUnlockHiddenPresets">Versteckte Presets freischalten</system:String>
+    <system:String x:Key="GarageModificationsRemoveBarnFindCars">Scheunenfund-Autos entfernen</system:String>
+    <system:String x:Key="GarageModificationsDlcCarsReleaseDateBypass">DLC-Autos Release-Datum umgehen</system:String>
+    <system:String x:Key="GarageModificationsClearNewTagOnCars">„Neu"-Markierung von Autos entfernen</system:String>
+    <system:String x:Key="GarageModificationsClearGarage">Garage leeren</system:String>
+    <system:String x:Key="GarageModificationsFixCarThumbnails">Auto-Vorschaubilder reparieren</system:String>
+
+    <system:String x:Key="OtherModifications">Sonstige Modifikationen</system:String>
+    <system:String x:Key="OtherModificationsFreePerfUpgrades">Kostenlose Performance-Upgrades</system:String>
+    <system:String x:Key="OtherModificationsFreeVisualUpgrades">Kostenlose Optik-Upgrades</system:String>
+    <system:String x:Key="OtherModificationsQuickAddAllCars">Schnell alle Autos hinzufügen</system:String>
+    <system:String x:Key="OtherModificationsQuickAddRareCars">Schnell seltene Autos hinzufügen</system:String>
+
+    <!-- SelfVehicle.xaml -->
+    <system:String x:Key="Handling">Fahrverhalten</system:String>
+    <system:String x:Key="Unlocks">Freischaltungen</system:String>
+    <system:String x:Key="PhotoMode">Fotomodus</system:String>
+    <system:String x:Key="Environment">Umgebung</system:String>
+    <system:String x:Key="Customization">Anpassung</system:String>
+    <system:String x:Key="Miscellaneous">Verschiedenes</system:String>
+    <system:String x:Key="Camera">Kamera</system:String>
+
+    <!-- Handling.xaml -->
+    <system:String x:Key="Velocity">Geschwindigkeit</system:String>
+    <system:String x:Key="Wheelspeed">Radgeschwindigkeit</system:String>
+    <system:String x:Key="Acceleration">Beschleunigung</system:String>
+    <system:String x:Key="Gravity">Schwerkraft</system:String>
+    <system:String x:Key="JumpHack">Sprung-Hack</system:String>
+    <system:String x:Key="FlyHack">Flug-Hack</system:String>
+    <system:String x:Key="FlyHackRotSpeed">Rotationsgeschwindigkeit</system:String>
+    <system:String x:Key="FlyHackMovSpeed">Bewegungsgeschwindigkeit</system:String>
+    <system:String x:Key="StopAllWheels">Alle Räder stoppen</system:String>
+    <system:String x:Key="SuperBrake">Super-Bremse</system:String>
+    <system:String x:Key="SuperCar">Super-Auto</system:String>
+    <system:String x:Key="NoWaterDrag">Kein Wasserwiderstand</system:String>
+
+    <system:String x:Key="Static">Statisch</system:String>
+    <system:String x:Key="Linear">Linear</system:String>
+
+    <!-- Unlocks.xaml -->
+    <system:String x:Key="Xp">XP</system:String>
+    <system:String x:Key="Credits">Credits</system:String>
+    <system:String x:Key="SkillPoints">Skill-Punkte</system:String>
+    <system:String x:Key="Wheelspins">Wheelspins</system:String>
+    <system:String x:Key="SeriesPoints">Serien-Punkte</system:String>
+    <system:String x:Key="SeasonalPoints">Saison-Punkte</system:String>
+    <system:String x:Key="Accolades">Auszeichnungen</system:String>
+    <system:String x:Key="Kudos">Kudos</system:String>
+    <system:String x:Key="ForzathonPoints">Forzathon-Punkte</system:String>
+    <system:String x:Key="CarXp">Auto-XP</system:String>
+    <system:String x:Key="CarPoints">Auto-Punkte</system:String>
+    <system:String x:Key="FreeClothing">Kostenlose Kleidung</system:String>
+
+    <!-- Customization.xaml -->
+    <system:String x:Key="GlowingPaint">Leuchtende Lackierung</system:String>
+    <system:String x:Key="HeadlightColour">Scheinwerferfarbe</system:String>
+    <system:String x:Key="ForceLod">LOD erzwingen (kann abstürzen)</system:String>
+    <system:String x:Key="Cleanliness">Sauberkeit</system:String>
+    <system:String x:Key="BackfireTime">Fehlzündungs-Dauer</system:String>
+    <system:String x:Key="MinTime">Min. Zeit</system:String>
+    <system:String x:Key="MaxTime">Max. Zeit</system:String>
+    <system:String x:Key="Dirt">Schmutz</system:String>
+    <system:String x:Key="Mud">Schlamm</system:String>
+
+    <!-- Environment.xaml -->
+    <system:String x:Key="SunRgb">Sonne RGB</system:String>
+    <system:String x:Key="Color">Farbe</system:String>
+    <system:String x:Key="Intensity">Intensität</system:String>
+    <system:String x:Key="AidsMode">Hilfen-Modus</system:String>
+    <system:String x:Key="FreezeAi">KI einfrieren</system:String>
+    <system:String x:Key="ManualTime">Manuelle Zeit</system:String>
+
+    <!-- Misc.xaml -->
+    <system:String x:Key="NameSpoofer">Namens-Spoofer</system:String>
+    <system:String x:Key="SpinPrizeScale">Spin-Preis-Skalierung</system:String>
+    <system:String x:Key="SpinSellFactor">Spin-Verkaufsfaktor</system:String>
+    <system:String x:Key="SkillScoreMultiplier">Skill-Score-Multiplikator</system:String>
+    <system:String x:Key="DriftScoreMultiplier">Drift-Score-Multiplikator</system:String>
+    <system:String x:Key="SkillTreeCost">Skilltree-Perk-Kosten</system:String>
+    <system:String x:Key="SkillTreeWideEdit">Skilltree-Massenbearbeitung</system:String>
+    <system:String x:Key="MissionTimeScale">Missions-Zeitskala</system:String>
+    <system:String x:Key="TrailblazerTimeScale">Trailblazer-Zeitskala</system:String>
+    <system:String x:Key="SpeedZoneMultiplier">Speedzone-Multiplikator</system:String>
+    <system:String x:Key="RaceTimeScale">Rennen-Zeitskala</system:String>
+    <system:String x:Key="DangerSignMultiplier">Gefahrenschild-Multiplikator</system:String>
+    <system:String x:Key="SpeedTrapMultiplier">Speedtrap-Multiplikator</system:String>
+    <system:String x:Key="DroneModeHeight">Drohnenmodus Max-Höhen-Multiplikator</system:String>
+    <system:String x:Key="RemoveBuildCap">Build-Limit entfernen</system:String>
+    <system:String x:Key="UnbreakableSkillScore">Unzerbrechlicher Skill-Score</system:String>
+    <system:String x:Key="AutoTpToWaypoint">Auto-TP zum Wegpunkt</system:String>
+
+    <!-- PhotoMode.xaml -->
+    <system:String x:Key="ModifiersRequireScanning">Fotomodus-Modifikatoren benötigen Scannen</system:String>
+    <system:String x:Key="Samples">Samples</system:String>
+    <system:String x:Key="ApertureScale">Blenden-Skalierung</system:String>
+    <system:String x:Key="CarInFocus">Auto im Fokus</system:String>
+    <system:String x:Key="TimeSlice">Zeitscheibe</system:String>
+    <system:String x:Key="TurnSpeed">Drehgeschwindigkeit</system:String>
+    <system:String x:Key="MoveSpeed">Bewegungsgeschwindigkeit</system:String>
+    <system:String x:Key="SamplesMultiplier">Samples-Multiplikator</system:String>
+    <system:String x:Key="NoHeightLimits">Keine Höhenbegrenzung</system:String>
+    <system:String x:Key="IncreasedZoom">Erhöhter Zoom</system:String>
+
+    <!-- Camera.xaml -->
+    <system:String x:Key="FovLock">FOV-Sperre</system:String>
+    <system:String x:Key="CameraOffset">Kamera-Offset</system:String>
+    <system:String x:Key="FovLimitersRequireScanning">FOV-Begrenzer benötigen Scannen</system:String>
+    <system:String x:Key="Chase">Verfolgung</system:String>
+    <system:String x:Key="ChaseFar">Verfolgung (fern)</system:String>
+    <system:String x:Key="Driver">Fahrer</system:String>
+    <system:String x:Key="Dashboard">Armaturenbrett</system:String>
+    <system:String x:Key="Hood">Motorhaube</system:String>
+    <system:String x:Key="Bumper">Stoßstange</system:String>
+
+    <!-- Tuning.xaml -->
+    <system:String x:Key="Tires">Reifen</system:String>
+    <system:String x:Key="Gearing">Getriebe</system:String>
+    <system:String x:Key="Alignment">Achseinstellung</system:String>
+    <system:String x:Key="Springs">Federn</system:String>
+    <system:String x:Key="Damping">Dämpfung</system:String>
+    <system:String x:Key="Aero">Aero</system:String>
+    <system:String x:Key="Steering">Lenkung</system:String>
+    <system:String x:Key="Other">Sonstiges</system:String>
+
+    <!-- Tires.xaml -->
+    <system:String x:Key="FrontLeftTirePressure">Reifendruck vorne links</system:String>
+    <system:String x:Key="FrontRightTirePressure">Reifendruck vorne rechts</system:String>
+    <system:String x:Key="RearLeftTirePressure">Reifendruck hinten links</system:String>
+    <system:String x:Key="RearRightTirePressure">Reifendruck hinten rechts</system:String>
+    <system:String x:Key="Psi">PSI</system:String>
+    <system:String x:Key="Bar">Bar</system:String>
+
+    <!-- Gearing.xaml -->
+    <system:String x:Key="FinalDriveRatio">Achsübersetzung</system:String>
+    <system:String x:Key="ReverseGear">Rückwärtsgang</system:String>
+    <system:String x:Key="FirstGear">1. Gang</system:String>
+    <system:String x:Key="SecondGear">2. Gang</system:String>
+    <system:String x:Key="ThirdGear">3. Gang</system:String>
+    <system:String x:Key="FourthGear">4. Gang</system:String>
+    <system:String x:Key="FifthGear">5. Gang</system:String>
+    <system:String x:Key="SixthGear">6. Gang</system:String>
+    <system:String x:Key="SeventhGear">7. Gang</system:String>
+    <system:String x:Key="EighthGear">8. Gang</system:String>
+    <system:String x:Key="NinthGear">9. Gang</system:String>
+    <system:String x:Key="TenthGear">10. Gang</system:String>
+
+    <!-- Alignment.xaml -->
+    <system:String x:Key="NegativeCamber">Negativer Sturz</system:String>
+    <system:String x:Key="PositiveCamber">Positiver Sturz</system:String>
+    <system:String x:Key="NegativeToe">Negative Spur</system:String>
+    <system:String x:Key="PositiveToe">Positive Spur</system:String>
+
+    <!-- Springs.xaml -->
+    <system:String x:Key="FrontSpringsMin">Federn vorne Min</system:String>
+    <system:String x:Key="FrontSpringsMax">Federn vorne Max</system:String>
+    <system:String x:Key="RearSpringsMin">Federn hinten Min</system:String>
+    <system:String x:Key="RearSpringsMax">Federn hinten Max</system:String>
+    <system:String x:Key="FrontRideHeightMin">Höhenlage vorne Min</system:String>
+    <system:String x:Key="FrontRideHeightMax">Höhenlage vorne Max</system:String>
+    <system:String x:Key="FrontRestriction">Begrenzung vorne</system:String>
+    <system:String x:Key="RearRideHeightMin">Höhenlage hinten Min</system:String>
+    <system:String x:Key="RearRideHeightMax">Höhenlage hinten Max</system:String>
+    <system:String x:Key="RearRestriction">Begrenzung hinten</system:String>
+    <system:String x:Key="Centimeters">Zentimeter</system:String>
+    <system:String x:Key="Inches">Zoll</system:String>
+
+    <!-- Damping.xaml -->
+    <system:String x:Key="FrontAntirollMin">Stabilisator vorne Min</system:String>
+    <system:String x:Key="FrontAntirollMax">Stabilisator vorne Max</system:String>
+    <system:String x:Key="RearAntirollMin">Stabilisator hinten Min</system:String>
+    <system:String x:Key="RearAntirollMax">Stabilisator hinten Max</system:String>
+    <system:String x:Key="FrontReboundStiffnessMin">Zugstufe vorne Min</system:String>
+    <system:String x:Key="FrontReboundStiffnessMax">Zugstufe vorne Max</system:String>
+    <system:String x:Key="RearReboundStiffnessMin">Zugstufe hinten Min</system:String>
+    <system:String x:Key="RearReboundStiffnessMax">Zugstufe hinten Max</system:String>
+    <system:String x:Key="FrontBumpStiffnessMin">Druckstufe vorne Min</system:String>
+    <system:String x:Key="FrontBumpStiffnessMax">Druckstufe vorne Max</system:String>
+    <system:String x:Key="RearBumpStiffnessMin">Druckstufe hinten Min</system:String>
+    <system:String x:Key="RearBumpStiffnessMax">Druckstufe hinten Max</system:String>
+
+    <!-- Aero.xaml -->
+    <system:String x:Key="FrontAeroMin">Aero vorne Min</system:String>
+    <system:String x:Key="FrontAeroMax">Aero vorne Max</system:String>
+    <system:String x:Key="RearAeroMin">Aero hinten Min</system:String>
+    <system:String x:Key="RearAeroMax">Aero hinten Max</system:String>
+
+    <!-- Steering.xaml -->
+    <system:String x:Key="AngleMax">Max. Lenkwinkel</system:String>
+    <system:String x:Key="AngleMax2">Max. Lenkwinkel 2</system:String>
+    <system:String x:Key="VelocityStraight">Geschwindigkeit geradeaus</system:String>
+    <system:String x:Key="VelocityTurning">Geschwindigkeit in Kurve</system:String>
+    <system:String x:Key="VelocityCountersteer">Gegenlenk-Geschwindigkeit</system:String>
+    <system:String x:Key="VelocityDynamicPeek">Dynamische Spitzengeschwindigkeit</system:String>
+    <system:String x:Key="TimeToMaxSteering">Zeit bis max. Lenkeinschlag</system:String>
+
+    <!-- Other.xaml -->
+    <system:String x:Key="Wheelbase">Radstand</system:String>
+    <system:String x:Key="FrontWidth">Spurbreite vorne</system:String>
+    <system:String x:Key="FrontSpacer">Spurplatten vorne</system:String>
+    <system:String x:Key="RearWidth">Spurbreite hinten</system:String>
+    <system:String x:Key="RearSpacer">Spurplatten hinten</system:String>
+    <system:String x:Key="RimSizeFront">Felgengröße - Vorne</system:String>
+    <system:String x:Key="RimRadiusFront">Felgenradius - Vorne</system:String>
+    <system:String x:Key="RimSizeRear">Felgengröße - Hinten</system:String>
+    <system:String x:Key="RimRadiusRear">Felgenradius - Hinten</system:String>
+
+    <!-- About.xaml -->
+    <system:String x:Key="ToolContributors">Tool-Mitwirkende</system:String>
+    <system:String x:Key="DiscordServer">Discord-Server</system:String>
+
+    <!-- Settings.xaml -->
+    <system:String x:Key="Appearance">Erscheinungsbild</system:String>
+    <system:String x:Key="ChangeTheme">Design ändern</system:String>
+    <system:String x:Key="MonetTheme">Monet-Design</system:String>
+    <system:String x:Key="Language">Sprache</system:String>
+    <system:String x:Key="ResetLanguage">Sprache zurücksetzen</system:String>
+    <system:String x:Key="ResetTheme">Design zurücksetzen</system:String>
+
+    <!-- Language Names -->
+    <system:String x:Key="English">Englisch</system:String>
+    <system:String x:Key="Afrikaans">Afrikaans</system:String>
+    <system:String x:Key="Arabic">Arabisch</system:String>
+    <system:String x:Key="Catalan">Katalanisch</system:String>
+    <system:String x:Key="ChineseSimplified">Chinesisch (Vereinfacht)</system:String>
+    <system:String x:Key="ChineseTraditional">Chinesisch (Traditionell)</system:String>
+    <system:String x:Key="Czech">Tschechisch</system:String>
+    <system:String x:Key="Danish">Dänisch</system:String>
+    <system:String x:Key="Dutch">Niederländisch</system:String>
+    <system:String x:Key="Finnish">Finnisch</system:String>
+    <system:String x:Key="French">Französisch</system:String>
+    <system:String x:Key="German">Deutsch</system:String>
+    <system:String x:Key="Greek">Griechisch</system:String>
+    <system:String x:Key="Hebrew">Hebräisch</system:String>
+    <system:String x:Key="Hungarian">Ungarisch</system:String>
+    <system:String x:Key="Italian">Italienisch</system:String>
+    <system:String x:Key="Japanese">Japanisch</system:String>
+    <system:String x:Key="Korean">Koreanisch</system:String>
+    <system:String x:Key="Norwegian">Norwegisch</system:String>
+    <system:String x:Key="Polish">Polnisch</system:String>
+    <system:String x:Key="Portuguese">Portugiesisch</system:String>
+    <system:String x:Key="PortugueseBrazilian">Portugiesisch (Brasilianisch)</system:String>
+    <system:String x:Key="Romanian">Rumänisch</system:String>
+    <system:String x:Key="Russian">Russisch</system:String>
+    <system:String x:Key="SerbianCyrillic">Serbisch (Kyrillisch)</system:String>
+    <system:String x:Key="SerbianLatin">Serbisch (Lateinisch)</system:String>
+    <system:String x:Key="Spanish">Spanisch</system:String>
+    <system:String x:Key="Swedish">Schwedisch</system:String>
+    <system:String x:Key="Thai">Thailändisch</system:String>
+    <system:String x:Key="Turkish">Türkisch</system:String>
+    <system:String x:Key="Ukrainian">Ukrainisch</system:String>
+    <system:String x:Key="Vietnamese">Vietnamesisch</system:String>
+
+</ResourceDictionary>
